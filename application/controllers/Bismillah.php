@@ -37,6 +37,22 @@ class Bismillah extends CI_Controller {
 		$this->load->view('template/footer');	
 	}
 
+	public function dekripsi(){
+		$this->load->view('template/header');
+		$this->load->view('template/sidebar');
+		$this->load->view('template/topbar');
+		$this->load->view('app/dekripsi');
+		$this->load->view('template/footer');	
+	}
+
+	public function about(){
+		$this->load->view('template/header');
+		$this->load->view('template/sidebar');
+		$this->load->view('template/topbar');
+		$this->load->view('app/about');
+		$this->load->view('template/footer');	
+	}
+	
 	public function file_upload(){
 		$uploadPath = 'dokumen/';
 
@@ -67,21 +83,6 @@ class Bismillah extends CI_Controller {
 		echo json_encode($data, JSON_PRETTY_PRINT);
 	}
 
-	public function dekripsi(){
-		$this->load->view('template/header');
-		$this->load->view('template/sidebar');
-		$this->load->view('template/topbar');
-		$this->load->view('app/dekripsi');
-		$this->load->view('template/footer');	
-	}
-
-	public function about(){
-		$this->load->view('template/header');
-		$this->load->view('template/sidebar');
-		$this->load->view('template/topbar');
-		$this->load->view('app/about');
-		$this->load->view('template/footer');	
-	}
 
 	// fungsi helper
 	// // TODO:
